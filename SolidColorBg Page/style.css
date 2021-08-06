@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+
+body {
+  height: 100vh;
+
+  background-color: rgb(122, 142, 197);
+
+  font-family: 'Inter', sans-serif, 'Courier New', Courier, monospace;
+
+  color: #e9e9e9;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+
+  overflow-y: hidden;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1400px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header {
+  align-self: flex-start;
+  margin-left: 1.47rem;
+  transform: scale(1.2);
+}
+.subtitle {
+  align-self: flex-start;
+  margin-left: 2rem;
+}
+
+section#main {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+section#main article {
+  width: 20%;
+  min-height: 40vh;
+  margin: 0 2rem;
+  padding: 1.8rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+
+  word-wrap: break-word;
+}
+section#main article:hover {
+  transition: all ease 0.1s;
+  transform: scale(1.02);
+}
+
+section#main article h2 {
+  font-size: 3rem;
+  margin-bottom: 3.2rem;
+}
+
+#campus {
+  background-color: #81e4da;
+  color: rgb(37, 37, 37);
+}
+h2 {
+  font-weight: 300;
+}
+h2 span {
+  font-weight: bold;
+}
+
+#workbench {
+  background-color: #015cad;
+}
+
+#soon {
+  border: 4px solid #e0e0e0;
+  color: rgb(37, 37, 37);
+}
+
+@media screen and (max-width: 750px) {
+  /* For mobile phones: */
+  body {
+    overflow-y: visible;
+  }
+
+  header,
+  .subtitle {
+    text-align: center;
+  }
+
+  section#main {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    padding-bottom: 6rem;
+  }
+
+  section#main article {
+    width: 43%;
+    min-height: 35vh;
+    margin: 2rem 0;
+    padding: 1.8rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+  section#main article p {
+    word-wrap: break-word;
+  }
+
+  .container {
+    display: block;
+  }
+}
